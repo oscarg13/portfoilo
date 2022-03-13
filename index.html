@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oscar's Portfolio</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+
+                <a class="logo" href="#"> Oscar's <span>Portfolio</span></a>
+                <img id="mobile-cta" class="mobile-menu" src="assets/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="assets/exit.svg" alt="Close Navigation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="https://github.com/oscarg13" target="_blank">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/gomezo/" target="_blank">LinkedIn</a></li>
+                    </ul>
+
+                    <ul class="secondary-nav">
+                        <li class="contact"><a href="#contact-scroll">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">Welcome to my Portfolio !</p>
+                    <h1> Junior Programmer who is always looking for the next challenge</h1>
+                    <div class="hero-cta">
+                        <a href="#about-me-scroll" class="primary-cta"> Learn More</a>
+                    </div>
+                </div>
+
+                <img src="assets/image-self.jpg" alt="Picture" class="hero-img" >
+            </div>
+
+
+        </section>
+
+        <section class="about-me" id="about-me-scroll">
+            <div class="container">
+                <ul class="about-me-list">
+                    <li> 2016 - 2019: Graduated from the University of North Carolina at Charlotte</li>
+                    <li> I am currently a Junior Programmer/Analyst at Hampton University </li>
+                    <li> I enjoy learning new things in the computer science field</li>
+                    <li> I have lots of hobbies and interest including cyber security, A.I and music</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <div class="container">
+                <ul>
+                    <li> <h3 class="tech-heading">Front-End</h3>HTML CSS JavaScript</li>
+                    <li> <h3 class="tech-heading">Back-End</h3>Oracle SQL</li>
+                    <li> <h3 class="tech-heading">Technical</h3>C/C++ Python Java Linux </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact" id="contact-scroll">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contact</h2>
+
+                    <form action="mailto:oscarg49nc@gmail.com" method="post" enctype="text/plain">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                        <input type="submit" class="send-message-cta" value="Send message">
+
+                    </form>
+                    <div class="contact-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102141.13680508397!2d-76.35516499999997!3d36.86856045000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ba98b64a933787%3A0xf582aa446354fcad!2sPortsmouth%2C%20VA!5e0!3m2!1sen!2sus!4v1647102419924!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const mobileBtn = document.getElementById('mobile-cta')
+                  nav = document.querySelector('nav')
+                  mobileBtnExit = document.getElementById('mobile-exit');
+            
+                  mobileBtn.addEventListener('click', () => {
+                      nav.classList.add('menu-btn')
+                  })
+
+                  mobileBtnExit.addEventListener('click', () => {
+                      nav.classList.remove('menu-btn')
+                  })
+        </script>
+    </body>
+</html>
