@@ -72,15 +72,16 @@
                 <div class="contact-left">
                     <h2>Contact</h2>
 
-                    <form action="mailto:oscarg49nc@gmail.com" method="post" enctype="text/plain">
+                    <form action="https://formsubmit.co/oscarg49nc@gmail.com" method="POST" enctype="text/plain">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" required>
 
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
+                
 
                         <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
 
                         <input type="submit" class="send-message-cta" value="Send message">
 
